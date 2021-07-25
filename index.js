@@ -3,6 +3,7 @@ const fs = require('fs');
 const dotenv = require('dotenv');
 dotenv.config();
 const Discord = require('discord.js');
+const keepAlive = require("./server/server"); //workaround to keep the bot running on replit
 
 const provider = new ethers.providers.WebSocketProvider(process.env.WS_URL);
 const abi = loadObjectsFromJsonFile("./abi/ERC20Abi.json");
@@ -194,6 +195,8 @@ function getTokenSymbol(tokenAddress) {
 
     return tokenContract.symbol();
 }
+
+keepAlive(); // For replit, not needed if you run the bot on your own computer/server
 
 startBot();
 
