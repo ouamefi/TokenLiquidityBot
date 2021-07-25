@@ -1,0 +1,28 @@
+{
+  "name": "token-liquidity-bot",
+  "version": "1.0.0",
+  "description": "A bot to detect when liquidity is added for a given token then post an alert on discord",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ouamefi/TokenLiquidityBot.git"
+  },
+  "author": "ouamefi",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.2.0",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.12"
+  },
+  "bugs": {
+    "url": "https://github.com/ouamefi/TokenLiquidityBot/issues"
+  },
+  "homepage": "https://github.com/ouamefi/TokenLiquidityBot#readme"
+}
