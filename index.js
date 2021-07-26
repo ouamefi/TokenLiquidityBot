@@ -118,7 +118,7 @@ function startBot() {
     
                 message.reply(`I'll let you know when liquidity is added for **${symbol}** (${tokenAddress})`);
             }).catch(_ => {
-                message.reply(`That's probably not a token address, where did you get that from? :kek:`);
+                message.reply(`That's probably not a token address, where did you get that from? <:kek:863450930182357003>`);
                 console.log(`Error while trying to fetch token symbol for ${tokenAddress}. The address might be wrong.`);
             });
         }
